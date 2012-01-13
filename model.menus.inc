@@ -12,7 +12,7 @@
   *
   * @package    menus
   */
-include_module('system/menu');
+moduleLoader::includeModule('system/menu');
 class menus {
 
     /**
@@ -43,7 +43,7 @@ class menus {
         self::viewAdminDropdown();
         $sections = systemMenu::getAllMenuAsSections();
         //print_r($sections);
-        include_module ('jquerysort');
+        moduleLoader::includeModule ('jquerysort');
         $options = array ();
         $options['table'] = 'menus';
         
