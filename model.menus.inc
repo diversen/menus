@@ -21,8 +21,6 @@ class menus {
      * @todo    return something usefull
      */
     function updateMenuTitles (){
-        //$menus = $this->getMenuList();
-        //$order = $_POST['order'];
 
         $db = new db();
         self::$dbh->beginTransaction();
@@ -36,13 +34,9 @@ class menus {
     }
     
     public static function displaySortItems(){
-        //$sections = systemMenu::getAdminMenuAsSections();
-        //print_r($sections);
-        //$main = layout::$menu['main'];
-        //print_r($main);
+
         self::viewAdminDropdown();
         $sections = systemMenu::getAllMenuAsSections();
-        //print_r($sections);
         moduleLoader::includeModule ('jquerysort');
         $options = array ();
         $options['table'] = 'menus';
@@ -65,14 +59,14 @@ class menus {
     public static function viewAdminDropdown () {
 
         $rows = systemMenu::getSectionsForDropdown();
-        
         $extras = array('onChange' => "this.form.submit()");
+        
+        if (isset($_GET)) $_GET = html::specialEncode ($_GET);
         
         html::$autoLoadTrigger = 'submit';
         html::init($_GET);
         html::formStart('menus_dropdown', 'get');
         html::legend(lang::translate('menus_filter'));
-
         html::select('menus_filter', $rows, 'title', 'id', null, $extras);
         html::formEnd();
         echo html::getStr();
