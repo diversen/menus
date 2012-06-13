@@ -5,7 +5,3 @@
 $_COS_LANG_MODULE['menus_main_menu_title'] = 'Menus';
 
 $_COS_LANG_MODULE['menus_menu_sort'] = 'Sort menus';
-
-
-
-
