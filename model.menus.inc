@@ -38,9 +38,9 @@ class menus {
         self::viewAdminDropdown();
         $sections = systemMenu::getAllMenuAsSections();
         moduleLoader::includeModule ('jquerysort');
-        $options = array ();
-        $options['table'] = 'menus';
         
+        $options = array ();
+        $options['table'] = 'menus';       
         $options['field'] = 'weight';
         $options['title'] = 'title';
         
