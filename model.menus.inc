@@ -33,6 +33,10 @@ class menus {
         self::$dbh->commit();
     }
     
+    public static function resetMenuItems () {
+        
+    }
+    
     public static function displaySortItems(){
 
         self::viewAdminDropdown();
@@ -49,7 +53,7 @@ class menus {
         } else {
             $options['items'] = $sections[$_GET['menus_filter']];
         }
-        $options['translate'] = true;
+        $options['translate'] = false;
         //jquerysort::setTable(self::$table);
         jquerysort::setOptions($options);
         jquerysort::setJs();
@@ -71,7 +75,5 @@ class menus {
         html::formEnd();
         echo html::getStr();
         echo "<br />\n";
-
-    }
-    
+    }   
 }

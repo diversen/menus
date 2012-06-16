@@ -12,14 +12,14 @@ if (!session::checkAccessControl('menus_allow_edit')){
 template::setJs('/js/jquery.jeditable.js');
 
 $indicator = lang::translate('menus_edit_indicator');
-$saving = lang::translate('menus_edit_saving');
+$tooltip = lang::translate('menus_edit_tooltip');
 
 ?>
 <script>
 $(document).ready(function() {
      $('.edit').editable('/menus/menu_update', {
-         indicator : 'Saving...',
-         tooltip   : 'Click to edit...'
+         indicator : '<?=$indicator?>',
+         tooltip   : '<?=$tooltip?>'
      });
      /*
      $('.edit_area').editable('http://www.example.com/save.php', { 
@@ -31,19 +31,15 @@ $(document).ready(function() {
      }); */
  });
 </script>
- <?php
+<?php
 
+echo "<p>" . lang::translate('menus_menu_edit_help') . "</p>";
 $sections = systemMenu::getAllMenuAsSections();
 //print_r($sections['main']);
 $str = '';
 foreach ($sections['main'] as $val) {
-    $current = lang::translate($val['title']);
-    //echo $current . "<br />\n";
-    //echo html::createLink('#', , $options)
-    //echo html::createLink('#', $current,
-    //        array ('class' => 'edit', 'id' => "id_$val[id]")
-    //);
-    //$item = lang::translate()
+    $current = $val['title'];
+
     $str.= <<<EOF
 <div class="edit" id = "id_$val[id]">$current</div><br />
 EOF;

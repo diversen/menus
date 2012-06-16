@@ -16,6 +16,12 @@ $_MODULE_MENU = array (
         'url' => '/menus/edit',
         'auth' => 'admin'
     ),
+    
+    array(
+        'title' => lang::translate('menus_menu_reset'),
+        'url' => '/menus/reset',
+        'auth' => 'admin'
+    ),
 
 );
  
