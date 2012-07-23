@@ -8,4 +8,4 @@ $_COS_LANG_MODULE['menus_menu_sort'] = 'Sort menu';
 
 $_COS_LANG_MODULE['menus_menu_edit'] = 'Edit titles';
 
-$_COS_LANG_MODULE['menus_menu_reset'] = 'Ret menu';
+$_COS_LANG_MODULE['menus_menu_reset'] = 'Reset menus';
