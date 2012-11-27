@@ -1,6 +1,9 @@
 <?php
 
-//echo $_POST['id'];
+if (!session::checkAccessControl('menus_allow_edit')){
+    return;
+}
+
 $id = str_replace('id_', '', $_POST['id']);
 $str = htmlspecialchars($_POST['value']);
 
