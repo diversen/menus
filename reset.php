@@ -23,7 +23,7 @@ if (isset($_POST['submit']) ) {
 
 
 function menus_reset_menus () {
-    $modules = moduleLoader::getInstalledModuleNames();
+    $modules = moduleloader::getInstalledModuleNames();
    
     //print_r($sections); die;
     foreach ($modules as $module) {
