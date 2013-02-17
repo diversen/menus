@@ -5,8 +5,6 @@
  *
  * @package settings
  */
-include_once "coslib/moduleInstaller.php";
-include_once "coslib/form_helpers.php";
 
 if (!session::checkAccessControl('menus_allow_edit')){
     return;
