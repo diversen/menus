@@ -25,7 +25,7 @@ function menus_reset_menus () {
    
     //print_r($sections); die;
     foreach ($modules as $module) {
-        $mod = new moduleInstaller($options = array ('module' => $module));
+        $mod = new moduleinstaller($options = array ('module' => $module));
         $mod->deleteMenuItem();
         $mod->insertMenuItem();
     }
