@@ -34,7 +34,7 @@ $(document).ready(function() {
 <?php
 
 echo "<p>" . lang::translate('menus_menu_edit_help') . "</p>";
-$sections = systemMenu::getAllMenuAsSections();
+$sections = system_menu::getAllMenuAsSections();
 //print_r($sections['main']);
 $str = '';
 foreach ($sections['main'] as $val) {

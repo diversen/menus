@@ -13,7 +13,7 @@
   * @package    menus
   */
 moduleloader::includeModule('system/menu');
-class menus {
+class settings_menu {
 
     /**
      * method for updating main menu
@@ -40,7 +40,7 @@ class menus {
     public static function displaySortItems(){
 
         self::viewAdminDropdown();
-        $sections = systemMenu::getAllMenuAsSections();
+        $sections = system_menu::getAllMenuAsSections();
         moduleloader::includeModule ('jquerysort');
         
         $options = array ();
@@ -62,7 +62,7 @@ class menus {
     
     public static function viewAdminDropdown () {
 
-        $rows = systemMenu::getSectionsForDropdown();
+        $rows = system_menu::getSectionsForDropdown();
         $extras = array('onChange' => "this.form.submit()");
         
         if (isset($_GET)) $_GET = html::specialEncode ($_GET);

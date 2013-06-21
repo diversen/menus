@@ -6,4 +6,4 @@ if (!session::checkAccessControl('menus_allow_edit')){
 }
 
 template::setTitle(lang::translate('menus_menu_sort'));
-menus::displaySortItems();
+settings_menu::displaySortItems();
