@@ -70,7 +70,7 @@ class settings_menu {
         html::$autoLoadTrigger = 'submit';
         html::init($_GET);
         html::formStart('menus_dropdown', 'get');
-        html::legend(lang::translate('menus_filter'));
+        html::legend(lang::translate('Pick menu section'));
         html::select('menus_filter', $rows, 'title', 'id', null, $extras);
         html::formEnd();
         echo html::getStr();

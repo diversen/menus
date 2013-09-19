@@ -1,6 +1,6 @@
 <?php
 
-$_COS_LANG_MODULE['menus_main_menu_title'] = 'Menyer';
-$_COS_LANG_MODULE['menus_menu_sort'] = 'Sortera-menyn';
-$_COS_LANG_MODULE['menus_menu_edit'] = 'Redigera titlar';
-$_COS_LANG_MODULE['menus_menu_reset'] = 'Återställ menyer';
+$_COS_LANG_MODULE['Menus'] = 'Menyer';
+$_COS_LANG_MODULE['Sort menu'] = 'Sortera-menyn';
+$_COS_LANG_MODULE['Edit titles'] = 'Redigera titlar';
+$_COS_LANG_MODULE['Reset menus'] = 'Återställ menyer';

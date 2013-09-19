@@ -6,19 +6,19 @@
 
 $_MODULE_MENU = array (
     array(
-        'title' => lang::translate('menus_menu_sort'),
+        'title' => lang::translate('Sort menu'),
         'url' => '/menus/index',
         'auth' => 'admin'
     ),
     
     array(
-        'title' => lang::translate('menus_menu_edit'),
+        'title' => lang::translate('Edit titles'),
         'url' => '/menus/edit',
         'auth' => 'admin'
     ),
     
     array(
-        'title' => lang::translate('menus_menu_reset'),
+        'title' => lang::translate('Reset menus'),
         'url' => '/menus/reset',
         'auth' => 'admin'
     ),

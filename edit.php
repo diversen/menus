@@ -11,8 +11,8 @@ if (!session::checkAccessControl('menus_allow_edit')){
 
 template::setJs('/js/jquery.jeditable.js');
 
-$indicator = lang::translate('menus_edit_indicator');
-$tooltip = lang::translate('menus_edit_tooltip');
+$indicator = lang::translate('Saving item ... ');
+$tooltip = lang::translate('Click to edit');
 
 ?>
 <script>
@@ -33,7 +33,7 @@ $(document).ready(function() {
 </script>
 <?php
 
-echo "<p>" . lang::translate('menus_menu_edit_help') . "</p>";
+echo "<p>" . lang::translate('Click on the menu items and edit them. Empty will delete') . "</p>";
 $sections = system_menu::getAllMenuAsSections();
 //print_r($sections['main']);
 $str = '';

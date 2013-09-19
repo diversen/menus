@@ -9,7 +9,7 @@ $str = htmlspecialchars($_POST['value']);
 
 $db = new db();
 if (empty($str)) {
-    echo lang::translate('menus_menu_item_removed');
+    echo lang::translate('Menu item deleted');
     $db->delete('menus', 'id', $id);
 } else {
     echo $str;

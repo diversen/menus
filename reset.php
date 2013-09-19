@@ -14,9 +14,9 @@ http::prg();
 
 if (isset($_POST['submit']) ) {
     menus_reset_menus();
-    echo lang::translate('menus_reset_done');
+    echo lang::translate('Menu has been reset');
 } else {
-    echo html_helpers::confirmForm(lang::translate('menus_confirm_reset'));
+    echo html_helpers::confirmForm(lang::translate('Confirm reset'));
 }
 
 

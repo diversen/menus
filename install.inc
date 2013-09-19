@@ -6,7 +6,7 @@
  * @package     menus
  */
 $_INSTALL['MAIN_MENU_ITEM'] = array (
-    'title' => 'menus_main_menu_title',
+    'title' => 'Menus',
     'url' => '/menus/index',
     'auth' => 'admin',
     'module_name' => 'menus',
