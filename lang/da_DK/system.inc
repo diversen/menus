@@ -1,6 +1,10 @@
 <?php
 
 
+// Translation of file /modules/menus/install.inc
+
+$_COS_LANG_MODULE['Menus'] = 'Menuer';
+
 // Translation of file /modules/menus/menu.inc
 
 $_COS_LANG_MODULE['Sort menu'] = 'Sorter menu';

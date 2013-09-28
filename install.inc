@@ -6,7 +6,7 @@
  * @package     menus
  */
 $_INSTALL['MAIN_MENU_ITEM'] = array (
-    'title' => 'Menus',
+    'title' => lang::translate('Menus', null ,array ('no_translate'=> true)),
     'url' => '/menus/index',
     'auth' => 'admin',
     'module_name' => 'menus',
