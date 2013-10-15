@@ -1,6 +1,6 @@
 <?php
 
-if (!session::checkAccessControl('menus_allow_edit')){
+if (!session::checkAccessFromModuleIni('menus_allow_edit')){
     return;
 }
 
