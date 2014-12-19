@@ -1,5 +1,6 @@
 <?php
 
+use diversen\html\helpers as html_helpers;
 /**
  * view functions for settings/menu
  *
