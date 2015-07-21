@@ -1,6 +1,7 @@
 <?php
 
 use diversen\html\helpers as html_helpers;
+use diversen\moduleinstaller;
 /**
  * view functions for settings/menu
  *
