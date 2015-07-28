@@ -9,7 +9,7 @@ if (!session::checkAccessFromModuleIni('menus_allow_edit')){
     return;
 }
 
-template::setJs('/js/jquery.jeditable.js');
+template::setJs('/bower_components/jeditable/jquery.jeditable.js');
 
 $indicator = lang::translate('Saving item ... ');
 $tooltip = lang::translate('Click to edit');
