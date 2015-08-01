@@ -1,5 +1,6 @@
 <?php
 
+use diversen\lang;
 /**
  * Install file for settings
  *
