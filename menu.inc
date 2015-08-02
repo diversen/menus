@@ -1,9 +1,6 @@
 <?php
 
-use  diversen\lang;
-/**
- * @ignore
- */
+use diversen\lang;
 
 $_MODULE_MENU = array (
     array(

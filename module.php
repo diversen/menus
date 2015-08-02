@@ -1,14 +1,14 @@
 <?php
 
+use diversen\db;
+use diversen\html;
+use diversen\html\helpers;
+use diversen\http;
 use diversen\lang;
+use diversen\moduleinstaller;
 use diversen\moduleloader;
 use diversen\session;
 use diversen\template;
-use diversen\html;
-use diversen\http;
-use diversen\html\helpers;
-use diversen\moduleinstaller;
-use diversen\db;
 
 /**
  * class for manipulating  main menu
