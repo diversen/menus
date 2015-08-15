@@ -1,5 +1,7 @@
 <?php
 
+namespace modules\menus;
+
 use diversen\db;
 use diversen\html;
 use diversen\html\helpers;
@@ -10,14 +12,16 @@ use diversen\moduleloader;
 use diversen\session;
 use diversen\template;
 
+use modules\system\menu\module as menuModule;
+use modules\jquerysort\module as jquerysort;
 /**
  * class for manipulating  main menu
  *
  * @package    menus
  */
-moduleloader::includeModule('system/menu');
+//moduleloader::includeModule('system/menu');
 
-class menus {
+class module {
 
     public function indexAction() {
         if (!session::checkAccessFromModuleIni('menus_allow_edit')) {
@@ -57,7 +61,7 @@ class menus {
         </script>
         <?php
         echo "<p>" . lang::translate('Click on the menu items and edit them. Empty will delete') . "</p>";
-        $sections = system_menu::getAllMenuAsSections();
+        $sections = menuModule::getAllMenuAsSections();
 
         $str = '';
         foreach ($sections['main'] as $val) {
@@ -143,11 +147,10 @@ EOF;
 
 
     public static function displaySortItems() {
-
+        
         self::viewAdminDropdown();
-        $sections = system_menu::getAllMenuAsSections();
-        moduleloader::includeModule('jquerysort');
-
+        $sections = menuModule::getAllMenuAsSections();
+        
         $options = array();
         $options['table'] = 'menus';
         $options['field'] = 'weight';
@@ -159,7 +162,7 @@ EOF;
             $options['items'] = $sections[$_GET['menus_filter']];
         }
         $options['translate'] = false;
-        //jquerysort::setTable(self::$table);
+
         jquerysort::setOptions($options);
         jquerysort::setJs();
         echo jquerysort::getHTML();
@@ -167,7 +170,7 @@ EOF;
 
     public static function viewAdminDropdown() {
 
-        $rows = system_menu::getSectionsForDropdown();
+        $rows = menuModule::getSectionsForDropdown();
         $extras = array('onChange' => "this.form.submit()");
 
         if (isset($_GET))
