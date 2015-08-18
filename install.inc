@@ -17,8 +17,6 @@ $_INSTALL['MAIN_MENU_ITEM'] = array (
     'section' => 'settings'
 );
 
-$_INSTALL['VERSION'] = 5.01;
-
 $_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/menus.git';
 $_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/menus.git';
 
