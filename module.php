@@ -118,11 +118,9 @@ EOF;
 
     static function reset() {
 
-        q::delete('menus')->exec();
-        
+        q::delete('menus')->exec(); 
         $modules = moduleloader::getInstalledModuleNames();
-
-        
+     
         foreach ($modules as $module) {
             $mod = new moduleinstaller($options = array('module' => $module));
             $mod->insertMenuItem();
