@@ -3,6 +3,7 @@
 namespace modules\menus;
 
 use diversen\db;
+use diversen\db\q;
 use diversen\html;
 use diversen\html\helpers;
 use diversen\http;
@@ -117,12 +118,13 @@ EOF;
 
     static function reset() {
 
+        q::delete('menus')->exec();
+        
         $modules = moduleloader::getInstalledModuleNames();
 
-        //print_r($sections); die;
+        
         foreach ($modules as $module) {
             $mod = new moduleinstaller($options = array('module' => $module));
-            $mod->deleteMenuItem();
             $mod->insertMenuItem();
         }
     }
