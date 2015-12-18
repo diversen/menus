@@ -39,7 +39,7 @@ class module {
             return;
         }
 
-        template::setJs('/bower_components/jeditable/jquery.jeditable.js');
+        assets::setJs('/bower_components/jeditable/jquery.jeditable.js');
 
         $indicator = lang::translate('Saving item ... ');
         $tooltip = lang::translate('Click to edit');
