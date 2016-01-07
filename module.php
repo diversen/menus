@@ -12,9 +12,10 @@ use diversen\moduleinstaller;
 use diversen\moduleloader;
 use diversen\session;
 use diversen\template;
+use diversen\template\assets;
 
-use modules\system\menu\module as menuModule;
 use modules\jquerysort\module as jquerysort;
+use modules\system\menu\module as menuModule;
 /**
  * class for manipulating  main menu
  *
