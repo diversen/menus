@@ -5,11 +5,13 @@ $LANG = array();
 // Translation of file modules/menus/install.inc
 
 $LANG['Menus'] = 'Menus';
+
 // Translation of file modules/menus/menu.inc
 
 $LANG['Sort menu'] = 'Sort menu';
 $LANG['Edit titles'] = 'Edit titles';
 $LANG['Reset menus'] = 'Reset menus';
+
 // Translation of file modules/menus/module.php
 
 $LANG['Sort menu'] = 'Sort menu';
