@@ -12,4 +12,4 @@ $LANG['Click on the menu items and edit them. Empty will delete'] = 'Klik på me
 $LANG['Menu has been reset'] = 'Menuen er blevet nulstillet';
 $LANG['Confirm reset'] = 'Bekræft reset';
 $LANG['Menu item deleted'] = 'Menupunkt slettet';
-$LANG['Pick menu section'] = 'Pick-menu sektion';
+$LANG['Pick menu section'] = 'Vælg menu sektion';
